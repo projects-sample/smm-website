@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMB - Social Media Mngt</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #333;
+            --accent-color: #86c440;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            padding-top: 76px;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero-section {
+            background-color: var(--light-bg);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section .leaf {
+            position: absolute;
+            width: 100px;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .leaf-1 {
+            top: 10%;
+            left: 5%;
+            transform: rotate(45deg);
+        }
+        
+        .leaf-2 {
+            bottom: 10%;
+            right: 5%;
+            transform: rotate(-30deg);
+        }
+        
+        h1, h2, h3 {
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        
+        .mission-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .service-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: white;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #6fa535;
+            border-color: #6fa535;
+        }
+        
+        .brand-logos {
+            background-color: var(--light-bg);
+            padding: 2rem 0;
+        }
+        
+        .brand-logo {
+            height: 40px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .brand-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        .cta-section {
+            background-color: var(--light-bg);
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .rounded-img {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            height: 100%;
+        }
+        
+        .checkmark {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .hero-section {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Social Media Business</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">OUR WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="mb-4">UNLOCK YOUR SOCIAL MEDIA POTENTIAL</h1>
+                    <p class="lead mb-4">We help businesses transform their online presence with strategic social media management and creative content solutions.</p>
+                    <a href="#contact" class="btn btn-primary">LEARN MORE</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded-img mt-4 mt-lg-0">
+                        <img src="img/1.png" alt="Social Media Manager" class="img-fluid rounded-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/2.png" alt="Decorative Leaf" class="leaf leaf-1">
+        <img src="img/3.png" alt="Decorative Leaf" class="leaf leaf-2">
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="mb-3">OUR MISSION IS TO BUILD COMMUNITIES AND BRAND RELATIONSHIPS THROUGH SOCIAL MEDIA</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" id="services">
+        <div class="container py-4">
+            <h2 class="text-center mb-5">OUR SERVICES</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card shadow-sm">
+                        <img src="img/4.png" alt="Social Media Management" class="service-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p>From comprehensive strategy to maintaining channels. We develop consistent social media presence that elevates your audience, drives engagement, and increases conversions across platforms.</p>
+                            <a href="#" class="btn btn-primary mt-2">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card shadow-sm">
+                        <img src="img/5.png" alt="Content Creation" class="service-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5">CONTENT CREATION</h3>
+                            <p>From specialized design to engaging posts that resonate with your followers. We handle content planning and engagement to establish a credible online presence across all social media platforms.</p>
+                            <a href="#" class="btn btn-primary mt-2">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card shadow-sm">
+                        <img src="img/6.png" alt="Brand Strategy" class="service-img w-100">
+                        <div class="p-4">
+                            <h3 class="h5">BRAND STRATEGY</h3>
+                            <p>In-depth branding analysis to build your brand through the art of digital storytelling and audience insights. Our team creates optimized campaigns, tracks performance, and implements strategies to ensure results.</p>
+                            <a href="#" class="btn btn-primary mt-2">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empowering Brands Section -->
+    <section class="py-5 bg-light" id="work">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="rounded-img">
+                        <img src="img/7.png" alt="Team Working" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h2>EMPOWERING BRANDS TO STAND OUT</h2>
+                    <p class="my-4">At RUENLY, we specialize in creating powerful digital experiences that connect brands with their audiences. Our talented team of social media strategists and content creators work to illuminate the power of social communication and to transform how small to medium-sized businesses grow by harnessing the power of social media.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Management Section -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="rounded-img">
+                        <img src="img/8.png" alt="Social Media Management" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0 order-lg-1">
+                    <h2>SOCIAL MEDIA MANAGEMENT</h2>
+                    <p class="my-4">Maximize your social media potential with our Social Media Management solution. We take the guesswork out of engagement, analyze your audience, optimize publishing strategies, manage your platform, and anticipate challenges. Our dedicated team is coordinating with you to provide a comprehensive social media strategy aligned with your business goals.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="checkmark">✓</span> Includes: tailored social media strategies, platform management, and engagement to grow your social media presence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paid Advertising Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="rounded-img">
+                        <img src="img/9.png" alt="Paid Advertising" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h2>PAID ADVERTISING</h2>
+                    <p class="my-4">With our Paid Advertising campaigns, we drive targeted traffic to your website, increase brand awareness, and generate leads on social media and search engines. Our team creates customized Facebook and Google Ads with a clear strategy to ensure maximum ROI. Whether it's a small or large campaign budget, we help you get the most out of your advertising budget.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="checkmark">✓</span> Includes: dedicated paid ad campaign strategy, targeted audience creation, Facebook & Google ad campaign management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engage Influence Convert Section -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="rounded-img">
+                        <img src="img/10.png" alt="Creative Team" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0 order-lg-1">
+                    <h2>ENGAGE. INFLUENCE. CONVERT.</h2>
+                    <p class="my-4">Our team of creative strategists, designers, and marketing experts work collaboratively to build comprehensive strategies that drive meaningful results. Whether it's boosting brand awareness, increasing engagement, or driving conversions, we tailor our approach to fit your unique goals.</p>
+                    <a href="#contact" class="btn btn-primary">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Creation Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="rounded-img">
+                        <img src="img/11.png" alt="Content Creation" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h2>CONTENT CREATION</h2>
+                    <p class="my-4">Our content creation service is designed to bring your vision to life. From eye-catching graphics to compelling visuals. From eye-catching graphics to captivating videos. We deliver tailored content that resonates with your audience and supports your business goals. Let us create the perfect content strategy for your brand with a seamless content delivery process.</p>
+                    <p>Our team of experienced writers, designers, and strategists work together to create compelling stories that engage your audience and boost brand presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2>READY TO CREATE SOMETHING AMAZING?</h2>
+                    <p class="lead my-4">Let's talk about how we can help elevate your social media presence and grow your business.</p>
+                    <a href="#" class="btn btn-primary btn-lg">BOOK A CALL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Logos -->
+    <section class="brand-logos py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-4 col-md-2 text-center mb-3 mb-md-0">
+                    <img src="img/2.png" alt="Client Logo" class="brand-logo">
+                </div>
+                <div class="col-4 col-md-2 text-center mb-3 mb-md-0">
+                    <img src="img/4.png" alt="Client Logo" class="brand-logo">
+                </div>
+                <div class="col-4 col-md-2 text-center mb-3 mb-md-0">
+                    <img src="img/5.png" alt="Client Logo" class="brand-logo">
+                </div>
+                <div class="col-4 col-md-2 text-center mb-3 mb-md-0">
+                    <img src="img/6.png" alt="Client Logo" class="brand-logo">
+                </div>
+                <div class="col-4 col-md-2 text-center">
+                    <img src="img/3.png" alt="Client Logo" class="brand-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">Social Media Business</h4>
+                    <p>Transforming social media presence for businesses around the world.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-3">CONTACT</h4>
+                    <p>Email: hello@smb.com<br>
+                    Phone: (123) XXX-XXXX<br>
+                    Address: Manila, Metro Manila</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h5 mb-3">CONNECT</h4>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white">Facebook</a>
+                        <a href="#" class="text-white">Instagram</a>
+                        <a href="#" class="text-white">LinkedIn</a>
+                        <a href="#" class="text-white">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="small mb-0">© 2025 RUENLY. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
