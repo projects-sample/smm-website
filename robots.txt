@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://projects-sample.github.io/SMB-Social-Media-Mngt/sitemap.xml
